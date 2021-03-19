@@ -1,43 +1,32 @@
 import React, { Component } from "react";
 import moment from 'moment'
-import {Scholarship} from '../helpers/Icons'
+import happy from '../assets/images/happy.png'
 
 class App extends Component {
     render() {
         return (
             <div>
                 <main role="main" className="container">
-                    {/* <div className="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
-                        <img
-                            className="mr-3"
-                            src={Scholarship}
-                            alt
-                            width={48}
-                            height={48}
-                        />
-                        <div className="lh-100">
-                            <h6 className="mb-0 text-white lh-100">All Classes</h6>
-                            <small>Year {moment().format("DD/MM/YYYY")}</small>
+                    <div className="body my-3 p-3 text-center bg-light rounded shadow-sm">
+                        <h2 className="sticky-top bg-light pb-2 mb-0">
+                            Affective State Profile App
+                        </h2>
+                        <div className="text-center">
+                            <img alt="" src={happy} className="rounded mx-auto" width="150vw" height="150vw"></img>
                         </div>
-                    </div> */}
-                    <div className="my-3 p-3 bg-white rounded shadow-sm">
-                        <h6 className="border-bottom border-gray pb-2 mb-0">
-                            Recent updates
-                        </h6>
+                        <br />
                         <div className="media text-muted pt-3">
-                            <img
-                                data-src="plcHolder"
-                                alt
-                                className="mr-2 rounded"
-                            />
-                            <p className="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                                <strong className="d-block text-gray-dark">Valar Nilai - 5</strong>
-                                Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                                tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                                fermentum massa justo sit amet risus.
-                            </p>
+                            <a href="/eventLog" className="mx-auto btn btn-primary btn-lg btn-block">Affective State Logging</a>
                         </div>
-
+                        <br />
+                        <div className="media text-muted pt-3">
+                            <a href="/eventLog" className="mx-auto btn btn-primary btn-lg btn-block">Affective State Logging</a>
+                        </div>
+                        <br />
+                        <div className="media text-muted pt-3">
+                            <a href="/eventLog" className="mx-auto btn btn-primary btn-lg btn-block">Affective State Logging</a>
+                        </div>
+                        <br />
                     </div>
                 </main>
             </div>
